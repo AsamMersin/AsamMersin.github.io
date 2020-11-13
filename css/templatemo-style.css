@@ -924,7 +924,7 @@ footer li a{
       padding-right: 10px;
       padding-left: 10px;
     }
-    html, body {overflow-x: hidden;
+    body {overflow-x: hidden;
    };
   }
 
@@ -982,7 +982,7 @@ footer li a{
       display: block;
       margin: 0 auto;
     }
-    html, body {overflow-x: hidden;
+    body {overflow-x: hidden;
     };
   }
 
@@ -999,7 +999,7 @@ footer li a{
     .contact-image {
       margin-top: 0;
     }
-    html, body {overflow-x: hidden;
+    body {overflow-x: hidden;
     };
   }
 
@@ -1020,7 +1020,7 @@ footer li a{
       width: inherit;
       height: inherit;
     }
-    html, body {overflow-x: hidden;
+    body {overflow-x: hidden;
     };
   }
   
