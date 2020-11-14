@@ -1130,7 +1130,10 @@ justify-content: space-around;
 
 }
 
-
+.bod{
+  overflow-y: hidden;
+  height:100%;
+}
 
 
 
