@@ -16,6 +16,7 @@ https://templatemo.com/tm-516-known
      <meta name="keywords" content="">
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <meta name="icon" href="images/asamlogoiper.png">
 
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -798,7 +799,7 @@ büyük ölçekli etkinlerle Türkiye çapında örnek ve lider Afrika öğrenci
           <figcaption>Asam Gallery</figcaption>
         </figure>   <figure class="gallery-image">
           <img src="Galeri/18.jpeg" width="20%" height="200px"  style="margin:10px"/>
-          <figcaption>Asam Gallery</figcaption>
+          <figcaption>Asam Gallery </figcaption>
         </figure>
          
 
@@ -829,7 +830,7 @@ büyük ölçekli etkinlerle Türkiye çapında örnek ve lider Afrika öğrenci
                <div class="row">
 
                     <div class="col-md-6 col-sm-12">
-                         <form id="contact-form" role="form" action="" method="post">
+                         <form id="contact-form" role="" action="" method="post">
                               <div class="section-title">
                                    <h2>Bize Ulaş <small>Öneriniz Veya Şikayetiniz Varsa</small></h2>
                               </div>
@@ -842,8 +843,8 @@ büyük ölçekli etkinlerle Türkiye çapında örnek ve lider Afrika öğrenci
                                    <textarea class="form-control" rows="6" placeholder="Mesajinizi burada yazınız" name="message" required=""></textarea>
                               </div>
 
-                              <div class="col-md-4 col-sm-12">
-                                   <input type="submit" class="form-control" name="gönder" value="Gönder">
+                              <div class="col-md-4 col-sm-12" value="Gönder">
+                                   <input id="formSEND" type="submit" class="form-control" name="gönder" >
                               </div>
 
                          </form>
@@ -971,7 +972,6 @@ büyük ölçekli etkinlerle Türkiye çapında örnek ve lider Afrika öğrenci
                                       <ul class="fta-list">
                                           <li><a href="#galerii"><i class="fas fa-angle-right"></i>Galeri</a></li>
                                           <li><a href="#mznlr"><i class="fas fa-angle-right"></i>Mezunlar</a></li>
-                                          <li><a href="#"><i class="fas fa-angle-right"></i>Geçmi</a></li>
                                       </ul>
                                   </div>
                               </div>
@@ -979,8 +979,8 @@ büyük ölçekli etkinlerle Türkiye çapında örnek ve lider Afrika öğrenci
                                   <div class="single-fta">
                                       <h4 class="fta-title"  style="font-weight:bold;color:rgb(200, 223, 216);font-family:Comic Sans MS, Luminari, fantasy;">Bizi Ulaş</h4>
                                       <ul class="fta-list">
-                                          <li>Adres: Mersin.Türkiye</li>
-                                          <li>Phone: +90 XXX XXX XX XX </li>
+                                          <li>Adres: Mersin/Turkey</li>
+                                          <li >Phone: +90 XXX XX  </li>
                                           <li><a href="mailto:asammersin@gmail.com"><i class="fas fa-envelope"></i> asammersin@gmail.com</a></li>
                                         <a href="https://www.instagram.com/african_stdnts_mersin/" >
                                              <img src="images/ip.png" width="40px" height="40px" title="Instagram" id="socialmediaicon1">
@@ -1033,6 +1033,9 @@ büyük ölçekli etkinlerle Türkiye çapında örnek ve lider Afrika öğrenci
      <!-- SCRIPTS -->
 
             <script type="text/javascript">
+            document.getElementById('formSEND').addEventListener('click', function(){
+               alert('Please Join Us By Email Address Bellow, The Contact Form Is In Updating')
+            });
 
 
 console.clear();
