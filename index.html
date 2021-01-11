@@ -70,8 +70,9 @@ https://templatemo.com/tm-516-known
                          <li><a href="#team" class="smoothScroll">Aktiviteler</a></li>
                         
                          <li><a href="#testimonial" class="smoothScroll">Mezunlar</a></li>
+                         <li><a href="#galerii" class="smoothScroll" >Galeri</a></li>
                           <li><a href="#contact" class="smoothScroll">İletişim</a></li>
-                          <li><a href="#contact" class="smoothScroll" onClick="alert('ASAM GALERY IS COMING SOON !')">Galeri</a></li>
+                     
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -721,6 +722,106 @@ büyük ölçekli etkinlerle Türkiye çapında örnek ve lider Afrika öğrenci
      </div>
      </section> 
 
+     <h2 style="margin:10px; text-align:center">Asam Galerisi</h2>
+
+
+   <div class="asamGallery" id="galerii">
+
+     
+     <div id="app" data-state="gallery">
+       <div class="gallery">
+         <!--
+     figure.gallery-image*30>img[src="https://source.unsplash.com/collection/2022043/700x900/?=$$"]+figcaption -->
+         <figure class="gallery-image">
+           <img src="Galeri/1.jpg" width="20%" height="200px"  style="margin:10px"/>
+           <figcaption>Asam Gallery</figcaption>
+         </figure>
+         <figure class="gallery-image">
+          <img src="Galeri/2.jpg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/3.jpg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/4.jpg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/5.jpg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/6.jpg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/7.jpg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/8.jpg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/9.jpg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/10.jpg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/11.jpeg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/12.jpeg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/13.jpeg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+        <figure class="gallery-image">
+          <img src="Galeri/14.jpeg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>   <figure class="gallery-image">
+          <img src="Galeri/15.jpeg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>   <figure class="gallery-image">
+          <img src="Galeri/16.jpeg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>   <figure class="gallery-image">
+          <img src="Galeri/17.jpeg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>   <figure class="gallery-image">
+          <img src="Galeri/18.jpeg" width="20%" height="200px"  style="margin:10px"/>
+          <figcaption>Asam Gallery</figcaption>
+        </figure>
+         
+
+
+
+
+
+
+
+
+
+       </div>
+       <div class="detail">
+         <!--   cloned figure/image goes here!   -->
+       </div>
+     </div>
+
+</div>
+<br> <br><br>
+
+
+     
+
 
      <!-- CONTACT -->
      <section id="contact">
@@ -761,6 +862,14 @@ büyük ölçekli etkinlerle Türkiye çapında örnek ve lider Afrika öğrenci
 
 
      <!-- FOOTER -->
+
+
+
+
+
+
+
+<!-- /gallery -->
     <!-- <footer id="footer">
           <div class="container">
                <div class="row">
@@ -922,7 +1031,86 @@ büyük ölçekli etkinlerle Türkiye çapında örnek ve lider Afrika öğrenci
      
      <!-- SCRIPTS -->
 
-            
+            <script type="text/javascript">
+
+
+console.clear();
+
+const elApp = document.querySelector("#app");
+
+const elImages = Array.from(document.querySelectorAll(".gallery-image"));
+
+const elDetail = document.querySelector(".detail");
+
+function flipImages(firstEl, lastEl, change) {
+  const firstRect = firstEl.getBoundingClientRect();
+
+  const lastRect = lastEl.getBoundingClientRect();
+
+  // INVERT
+  const deltaX = firstRect.left - lastRect.left;
+  const deltaY = firstRect.top - lastRect.top;
+  const deltaW = firstRect.width / lastRect.width;
+  const deltaH = firstRect.height / lastRect.height;
+
+  change();
+  lastEl.parentElement.dataset.flipping = true;
+
+  const animation = lastEl.animate([
+    {
+      transform: `translateX(${deltaX}px) translateY(${deltaY}px) scaleX(${deltaW}) scaleY(${deltaH})`
+    },
+    {
+      transform: 'none'
+    }
+  ], {
+    duration: 600, // milliseconds
+    easing: 'cubic-bezier(.2, 0, .3, 1)'
+  });
+
+  animation.onfinish = () => {
+    delete lastEl.parentElement.dataset.flipping;
+  }
+
+}
+
+elImages.forEach(figure => {
+
+  figure.addEventListener("click", () => {
+    const elImage = figure.querySelector('img');
+
+    elDetail.innerHTML = "";
+
+    const elClone = figure.cloneNode(true);
+    elDetail.appendChild(elClone);
+
+    const elCloneImage = elClone.querySelector('img');
+
+    flipImages(elImage, elCloneImage, ()=>{
+      elApp.dataset.state="detail";
+    });
+
+    function revert(){
+
+      flipImages(elCloneImage, elImage, ()=>{
+        elApp.dataset.state="gallery";
+        elDetail.removeEventListener('click',revert);
+      });
+
+    }
+
+    elDetail.addEventListener('click',revert);
+
+  });
+});
+
+
+
+
+
+
+
+                 </script>
      <script src="js/jquery.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/owl.carousel.min.js"></script>
