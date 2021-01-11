@@ -1147,7 +1147,7 @@ justify-content: space-around;
   margin: 0;
   padding: 0;
 }
-img {
+.asamGallery img {
   max-width: 100%;
   height: auto;
   transform-origin: top left;
